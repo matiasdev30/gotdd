@@ -5,6 +5,7 @@ import "testing"
 func TestOla(t *testing.T)  {
 
 	verificarTest := func(resultado string, esperado string){
+		t.Helper()
 		if resultado != esperado {
 			t.Errorf("resultado '%s' esperado '%s'", resultado, esperado)
 		} 

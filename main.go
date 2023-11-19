@@ -8,18 +8,25 @@ const prefixoOlaEmPt = "Olá"
 const prefixoOlaEspanhol = "Holla"
 
 func Ola(name string, idioma string) string {
-	if name == "" {
+
+	if name == ""{
 		name = "Mundo"
 	}
 
-	if idioma == espanhol {
-		return prefixoOlaEspanhol + ", " + name 
+	return prefixoSaudacao(idioma) + ", " + name
+}
+
+func prefixoSaudacao(idioma string)(prefixo string){
+
+	switch idioma {
+	case "espanhol":
+		prefixo = prefixoOlaEspanhol
+	case "françes":
+		prefixo = prefixoFrances
+	default :
+		prefixo = prefixoOlaEmPt
 	}
 
-	if(idioma == frances){
-		return prefixoFrances + ", " + name
-	}
-
-	return prefixoOlaEmPt + ", " + name
+	return 
 }
 
