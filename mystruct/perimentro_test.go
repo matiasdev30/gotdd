@@ -18,7 +18,7 @@ func TestPerimentro(t *testing.T) {
 		resultado := tt.forma.Area()
 
 		if resultado != tt.esperado{
-			t.Errorf("resultado %.2f, esperado %.2f", resultado, tt.esperado)
+			t.Errorf("%#v resultado %.2f, esperado %.2f", tt.forma, resultado, tt.esperado)
 		}
 	}
 }
