@@ -13,6 +13,8 @@ func TestRepetir(t * testing.T){
 	})
 }
 
+
+//Benchmark perfomatic test
 func BenchmarkRepetir (b *testing.B){
 	for c := 0; c < b.N; c ++{
 		Repetir("a")
